@@ -1,0 +1,19 @@
+<!DOCTYPYE html>
+<html ng-app="LunchCheck">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lunch Box Application</title>
+  </head>
+  <body>
+    <h1>Lunch Box application</h1>
+    <div ng-controller="LunchCheckController">
+      <input type="textbox"
+             ng-model="lunchItems" >
+      <button ng-click="lunchCheck()">Check If Too Much</button><br>
+      {{message}}
+
+    </div>
+  </body>
+</html>
